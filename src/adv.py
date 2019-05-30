@@ -55,9 +55,9 @@ player = Player('gabe', room['outside'])
 
 while True:
     room = player.current_room
-    print('\n=====================')
-    print(f'You are in {room.name}\n')
-    print(f'{room.description}\n')
+    print(f'\n===== You are in {room.name} =====\n')
+    print(f'{room.description}')
+    print('\n------------------------------')
 
     cmd = input(
         'Enter "n" for North, "s" for South, "e" for East, "w" for West, "q" to quit :')
