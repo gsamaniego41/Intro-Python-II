@@ -1,5 +1,6 @@
 from room import Room
 from player import Player
+import logging
 
 # Declare all the rooms
 
@@ -67,4 +68,5 @@ while True:
     elif cmd in directions:
         player.move_player(cmd)
     else:
-        print("That action is not valid.")
+        logging.error(
+            'Direction is not valid.\nPlease enter "n", "s", "e", "w", or "q"')
